@@ -27,7 +27,7 @@ double[,] GenerateMatrix(int rows, int cols, double leftRange, double rightRange
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i,j] = Math.Round(rand.NextDouble() * (rightRange - leftRange) + leftRange, rand.Next(0, 2));
+            matrix[i, j] = Math.Round(rand.NextDouble() * (rightRange - leftRange) + leftRange, rand.Next(0, 2));
         }
     }
     return matrix;
@@ -39,7 +39,7 @@ void PrintMatrix(double[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-           Console.Write(matrix[i,j] + "\t"); 
+            Console.Write(matrix[i, j] + "\t");
         }
         Console.WriteLine();
     }
