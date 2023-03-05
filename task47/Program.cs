@@ -48,5 +48,5 @@ void PrintMatrix(double[,] matrix)
 
 int m = ReadInt("Укажите количество строк матрицы: ");
 int n = ReadInt("Укажите количество столбцов матрицы: ");
-double[,] myMatrix = GenerateMatrix(m, n, -1, 1);
+double[,] myMatrix = GenerateMatrix(m, n, -9, 9);
 PrintMatrix(myMatrix);
