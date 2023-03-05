@@ -27,8 +27,10 @@ double[,] GenerateMatrix(int rows, int cols, double leftRange, double rightRange
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = Math.Round(rand.NextDouble() * (rightRange - leftRange) + leftRange, rand.Next(0, 2));
-        }
+            matrix[i, j] = Math.Round(rand.NextDouble() * (rightRange - leftRange) + leftRange, 1); 
+            // как я понял, NextDouble возвращает значение [0.0, 1.0), но округление позволяет получить [0, 1].
+            // Чем больше знаков после запятой, тем меньше вероятность получить rightRange.
+        } 
     }
     return matrix;
 }
