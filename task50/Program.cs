@@ -50,11 +50,11 @@ void PrintMatrix(double[,] matrix) // вывод матрицы в консол�
 
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        Console.Write($"({i}):" + "\t"); // добавляем нумерацию строк 
+        Console.Write($"({i}):"); // добавляем нумерацию строк 
 
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write(matrix[i, j] + "\t");
+            Console.Write("\t" + matrix[i, j]);
         }
 
         Console.WriteLine();
